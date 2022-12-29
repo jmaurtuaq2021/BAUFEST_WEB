@@ -1,0 +1,288 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-28T23:38:32.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2713854400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Agregar al carrito una laptop y comprobar si este se agrego en el carrito",
+        "description": "",
+        "id": "agregar-item-al-carrito-y-comprobarlo;agregar-al-carrito-una-laptop-y-comprobar-si-este-se-agrego-en-el-carrito",
+        "after": [
+          {
+            "result": {
+              "duration": 673192800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2703700100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que estoy logueado en la pagina web",
+            "match": {
+              "location": "step.AgregarCarritoStep.queEstoyLogueadoEnLaPaginaWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"prod.html?idp_\u003d9\" class\u003d\"hrefch\"\u003e...\u003c/a\u003e is not clickable at point (1335, 912). Other element would receive the click: \u003cdiv class\u003d\"modal fade show\" id\u003d\"logInModal\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"logInModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00274.6.0\u0027, revision: \u002779f1c02ae20\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.13\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [bbef7ee89e08348c7f938ae1454ad62c, clickElement {id\u003d18b598a5-a284-4502-b828-6827fe0e7af9}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Usuario\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56926/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (bbef7ee89e08348c7f938ae1454ad62c)] -\u003e link text: Sony vaio i7]\nSession ID: bbef7ee89e08348c7f938ae1454ad62c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat page.MenuPage.escogerlaptop(MenuPage.java:89)\r\n\tat step.AgregarCarritoStep.agregoUnaLaptopAlCarrito(AgregarCarritoStep.java:28)\r\n\tat ✽.agrego una laptop al carrito(file:///C:/Users/Usuario/Documents/CURSO%20AUTOMATIZACION%20NOVUS/BAUFEST_WEB/src/test/resources/feature/IngresarLaptopAndComprobar.feature:5)\r\n",
+              "duration": 2006385300,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "agrego una laptop al carrito",
+            "match": {
+              "location": "step.AgregarCarritoStep.agregoUnaLaptopAlCarrito()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 264500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "valido su existencia en el carrito \"Sony vaio i7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sony vaio i7\"",
+                  "offset": 35
+                }
+              ],
+              "location": "step.AgregarCarritoStep.validoSuExistenciaEnElCarrito(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@carrito"
+          }
+        ]
+      }
+    ],
+    "name": "agregar item al carrito y comprobarlo",
+    "description": "",
+    "id": "agregar-item-al-carrito-y-comprobarlo",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/IngresarLaptopAndComprobar.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-28T23:38:40.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1307224200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Registro de usuario con mis datos personales",
+        "description": "",
+        "id": "registrarme-en-la-pagina-web;registro-de-usuario-con-mis-datos-personales",
+        "after": [
+          {
+            "result": {
+              "duration": 1608686900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1831294400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que estoy dentro de la pagina",
+            "match": {
+              "location": "step.RegistrarStep.queEstoyDentroDeLaPagina()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143149000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "ingreso a registrarme",
+            "match": {
+              "location": "step.RegistrarStep.ingresoARegistrarme()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17328102300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ingreso los datos del usuario",
+            "match": {
+              "location": "step.RegistrarStep.ingresoLosDatosDelUsuario()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@carrito"
+          }
+        ]
+      }
+    ],
+    "name": "registrarme en la pagina web",
+    "description": "",
+    "id": "registrarme-en-la-pagina-web",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Registrar.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-28T23:39:02.548Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1240952600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Ingresar usuario y clave para loguearse con mis datos personales",
+        "description": "",
+        "id": "loguearse-en-la-pagina-web;ingresar-usuario-y-clave-para-loguearse-con-mis-datos-personales",
+        "after": [
+          {
+            "result": {
+              "duration": 1641426500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2093342800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que estoy dentro de la pagina web",
+            "match": {
+              "location": "step.LoginAndLogOutStep.queEstoyDentroDeLaPaginaWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103362700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "ingreso a Log in",
+            "match": {
+              "location": "step.LoginAndLogOutStep.ingresoALogIn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 428220600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ingreso mis datos de logueo",
+            "match": {
+              "location": "step.LoginAndLogOutStep.ingresoMisDatosDeLogueo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45877900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "me logueo con mis credenciales",
+            "match": {
+              "location": "step.LoginAndLogOutStep.meLogueoConMisCredenciales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33362219100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "cierro sesión o Log Out",
+            "match": {
+              "location": "step.LoginAndLogOutStep.cierroSesiónOLogOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@carrito"
+          }
+        ]
+      }
+    ],
+    "name": "loguearse en la pagina web",
+    "description": "",
+    "id": "loguearse-en-la-pagina-web",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/loginAndLogOut.feature",
+    "tags": []
+  }
+]

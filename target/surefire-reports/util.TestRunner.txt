@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: util.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 70.203 s <<< FAILURE! - in util.TestRunner
+agregar item al carrito y comprobarlo.Agregar al carrito una laptop y comprobar si este se agrego en el carrito  Time elapsed: 8.327 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="prod.html?idp_=9" class="hrefch">...</a> is not clickable at point (1335, 912). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbef7ee89e08348c7f938ae1454ad62c, clickElement {id=18b598a5-a284-4502-b828-6827fe0e7af9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Usuario\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56926/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bbef7ee89e08348c7f938ae1454ad62c)] -> link text: Sony vaio i7]
+Session ID: bbef7ee89e08348c7f938ae1454ad62c
+
