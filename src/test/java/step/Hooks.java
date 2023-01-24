@@ -14,7 +14,7 @@ public class Hooks {
     public static WebDriver driver;
 
     @Before
-    public void  setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -23,8 +23,14 @@ public class Hooks {
     }
 
     @After
-    public void teardown(){
+    public void teardown() {
         driver.manage().deleteAllCookies();
 
+    }
+
+    @After
+    public void tearDown() {
+        driver.manage().deleteAllCookies();
+        driver.quit();
     }
 }
